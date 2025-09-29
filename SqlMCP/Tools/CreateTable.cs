@@ -15,7 +15,8 @@ public partial class Tools
     public async Task<DbOperationResult> CreateTable(
     [McpToolTrigger(CreateTableToolName, CreateTableDescription)]
         ToolInvocationContext context,
-      [McpToolProperty(CreateTableSQLPropertyName, CreateTableSQLPropertyType, CreateTableSQLPropertyDescription)]
+      [McpToolProperty(CreateTableSQLPropertyName, CreateTableSQLPropertyType, 
+        CreateTableSQLPropertyDescription)]
         string sql)
     {
         return await tools.CreateTable(sql);
