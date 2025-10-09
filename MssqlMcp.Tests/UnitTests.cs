@@ -14,7 +14,7 @@ namespace MssqlMcp.Tests
         private readonly Tools _tools;
         public MssqlMcpTests()
         {
-            Environment.SetEnvironmentVariable("CONNECTION_STRING", "Server=tcp:dps2022sql.database.windows.net,1433;Initial Catalog=advdwdev;Persist Security Info=False;User ID=dennes;Password=Wmhapx4696");
+            Environment.SetEnvironmentVariable("CONNECTION_STRING", "<<connectionstring>>");
             _tableName = $"TestTable_{Guid.NewGuid():N}";
             var connectionFactory = new SqlConnectionFactory();
             var loggerMock = new Mock<ILogger<Tools>>();
